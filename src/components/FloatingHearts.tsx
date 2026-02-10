@@ -1,33 +1,37 @@
 import { useEffect, useState } from "react";
 
-interface Heart {
+interface FloatingItem {
   id: number;
   left: number;
   size: number;
   delay: number;
   duration: number;
+  symbol: string;
 }
 
+const symbols = ["🪔", "✨", "🌸", "💃", "🪷", "🔔", "⭐"];
+
 const FloatingHearts = () => {
-  const [hearts, setHearts] = useState<Heart[]>([]);
+  const [items, setItems] = useState<FloatingItem[]>([]);
 
   useEffect(() => {
-    const generated: Heart[] = Array.from({ length: 15 }, (_, i) => ({
+    const generated: FloatingItem[] = Array.from({ length: 15 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
-      size: 12 + Math.random() * 20,
+      size: 14 + Math.random() * 18,
       delay: Math.random() * 5,
       duration: 4 + Math.random() * 6,
+      symbol: symbols[i % symbols.length],
     }));
-    setHearts(generated);
+    setItems(generated);
   }, []);
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-      {hearts.map((h) => (
+      {items.map((h) => (
         <span
           key={h.id}
-          className="absolute text-valentine-rose opacity-20"
+          className="absolute opacity-20"
           style={{
             left: `${h.left}%`,
             bottom: "-20px",
@@ -35,7 +39,7 @@ const FloatingHearts = () => {
             animation: `floatUp ${h.duration}s ease-in-out ${h.delay}s infinite`,
           }}
         >
-          ♥
+          {h.symbol}
         </span>
       ))}
       <style>{`

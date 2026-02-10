@@ -3,9 +3,9 @@ import { NavLink } from "@/components/NavLink";
 import FloatingHearts from "@/components/FloatingHearts";
 
 const defaultVideos = [
-  { title: "Perfect — Ed Sheeran", id: "2Vv-BfVoq4g" },
-  { title: "All of Me — John Legend", id: "450p7goxZqg" },
-  { title: "La Vie en Rose — Édith Piaf", id: "3Ba_WoSZXvw" },
+  { title: "Munbe Vaa — Shreya Ghoshal", id: "uyUoEifAFtQ" },
+  { title: "Kannathil Muthamittal — A.R. Rahman", id: "3ixk1vo8dUo" },
+  { title: "Snehithane — Alaipayuthey", id: "xmwjMOT3MFE" },
 ];
 
 function extractYouTubeId(url: string): string | null {
@@ -49,10 +49,10 @@ const MusicPlayer = () => {
         <header className="text-center mb-8">
           <span className="text-6xl block mb-3">🎧</span>
           <h1 className="font-display text-3xl md:text-4xl font-black text-foreground mb-2">
-            Musique <span className="text-primary">Romantique</span>
+            Musique <span className="text-primary">Tamoule</span>
           </h1>
           <p className="font-body text-muted-foreground">
-            Écoute et ajoute tes chansons d'amour préférées 💗
+            Écoute et ajoute tes chansons tamoules préférées 🌸
           </p>
         </header>
 

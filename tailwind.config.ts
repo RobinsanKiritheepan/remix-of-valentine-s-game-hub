@@ -51,12 +51,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        valentine: {
-          rose: "hsl(var(--valentine-rose))",
-          pink: "hsl(var(--valentine-pink))",
-          blush: "hsl(var(--valentine-blush))",
-          deep: "hsl(var(--valentine-deep))",
-          gold: "hsl(var(--valentine-gold))",
+        tamil: {
+          red: "hsl(var(--tamil-red))",
+          gold: "hsl(var(--tamil-gold))",
+          cream: "hsl(var(--tamil-cream))",
+          deep: "hsl(var(--tamil-deep))",
+          green: "hsl(var(--tamil-green))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

@@ -32,7 +32,7 @@ const SongWriter = () => {
             Écris ta <span className="text-primary">Chanson</span>
           </h1>
           <p className="font-body text-muted-foreground">
-            Compose tes plus belles paroles d'amour 🎵
+            Compose tes plus belles paroles inspirées de la musique tamoule 🌸
           </p>
         </header>
 
@@ -50,7 +50,7 @@ const SongWriter = () => {
           />
           <textarea
             className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm min-h-[200px] font-body leading-relaxed focus:outline-none focus:ring-2 focus:ring-primary"
-            placeholder="Écris tes paroles ici…&#10;&#10;Couplet 1 :&#10;…&#10;&#10;Refrain :&#10;…"
+            placeholder="Écris tes paroles ici…&#10;&#10;Pallavi :&#10;…&#10;&#10;Charanam :&#10;…"
             value={currentLyrics}
             onChange={(e) => {
               setCurrentLyrics(e.target.value);
@@ -67,7 +67,7 @@ const SongWriter = () => {
               disabled={!currentTitle.trim() || !currentLyrics.trim()}
               className="btn-valentine text-sm py-2 px-6 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Sauvegarder 💝
+              Sauvegarder 🪔
             </button>
           </div>
         </div>
