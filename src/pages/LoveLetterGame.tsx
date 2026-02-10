@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 import FloatingHearts from "@/components/FloatingHearts";
 
 const words = [
-  { word: "A _ O U R", answer: "AMOUR", hint: "Le plus beau sentiment 💕" },
-  { word: "C _ E U R", answer: "COEUR", hint: "Il bat pour toi 💓" },
-  { word: "B _ I S E R", answer: "BAISER", hint: "Un doux contact 💋" },
-  { word: "R _ S E", answer: "ROSE", hint: "Fleur de l'amour 🌹" },
-  { word: "C _ P I D O N", answer: "CUPIDON", hint: "L'archer de l'amour 🏹" },
-  { word: "T _ N D R E S S E", answer: "TENDRESSE", hint: "Douceur du cœur 🤗" },
+  { word: "B _ A R A T A N A T Y A M", answer: "BHARATANATYAM", hint: "La danse classique tamoule 💃" },
+  { word: "K _ L A M", answer: "KOLAM", hint: "Motif décoratif au sol 🌀" },
+  { word: "P _ N G A L", answer: "PONGAL", hint: "Fête des récoltes tamoule 🌾" },
+  { word: "M _ L L I G A I", answer: "MALLIGAI", hint: "Le jasmin en tamoul 🌸" },
+  { word: "S _ L A N G A I", answer: "SALANGAI", hint: "Clochettes de danse 🔔" },
+  { word: "T _ I R U K K U R A L", answer: "THIRUKKURAL", hint: "Chef-d'œuvre littéraire tamoul 📜" },
 ];
 
 const LoveLetterGame = () => {
@@ -60,14 +60,14 @@ const LoveLetterGame = () => {
               <span className="font-body font-bold text-primary">Score : {score}</span>
             </div>
 
-            <span className="text-4xl block mb-2">✉️</span>
+            <span className="text-4xl block mb-2">✍️</span>
             <h2 className="font-display text-xl font-bold text-foreground mb-2">
-              Complète le mot d'amour
+              Complète le mot tamoul
             </h2>
 
             <p
-              className="text-3xl font-display font-black text-primary mb-4 tracking-widest"
-              style={{ letterSpacing: "0.3em" }}
+              className="text-2xl md:text-3xl font-display font-black text-primary mb-4 tracking-widest"
+              style={{ letterSpacing: "0.2em" }}
             >
               {w.word}
             </p>
@@ -114,17 +114,17 @@ const LoveLetterGame = () => {
           </div>
         ) : (
           <div className="game-card text-center">
-            <span className="text-6xl block mb-4">💌</span>
+            <span className="text-6xl block mb-4">🪔</span>
             <h2 className="font-display text-2xl font-bold text-foreground mb-2">
-              Lettre terminée !
+              Défi terminé !
             </h2>
             <p className="text-4xl font-display font-black text-primary mb-4">
               {score}/{words.length}
             </p>
             <p className="font-body text-muted-foreground mb-6">
               {score === words.length
-                ? "Parfait ! Tu connais le langage de l'amour ! 💖"
-                : "Continue à explorer les mots de l'amour ! 📝"}
+                ? "Parfait ! Tu maîtrises le vocabulaire tamoul ! 🌸"
+                : "Continue à explorer les mots de ta culture ! ✨"}
             </p>
             <div className="flex gap-3 justify-center">
               <button

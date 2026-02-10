@@ -4,24 +4,24 @@ import FloatingHearts from "@/components/FloatingHearts";
 
 const famousPoems = [
   {
-    author: "Victor Hugo",
-    title: "Demain, dès l'aube",
-    text: "Demain, dès l'aube, à l'heure où blanchit la campagne,\nJe partirai. Vois-tu, je sais que tu m'attends.\nJ'irai par la forêt, j'irai par la montagne.\nJe ne puis demeurer loin de toi plus longtemps.",
+    author: "Thiruvalluvar",
+    title: "Thirukkural — L'Amour",
+    text: "Les yeux de celle que j'aime sont comme une fleur de lotus.\nL'éclat de son visage est plus doux que le miel.\nCelui qui possède l'amour possède tout ;\nSans amour, rien ne vaut d'être possédé.",
   },
   {
-    author: "Paul Éluard",
-    title: "Je t'aime",
-    text: "Je t'aime pour toutes les femmes que je n'ai pas connues\nJe t'aime pour tous les temps où je n'ai pas vécu\nJe t'aime pour l'odeur du grand large\nEt pour l'odeur du pain chaud.",
+    author: "Subramania Bharathiar",
+    title: "Pudhumai Penn (La Femme Nouvelle)",
+    text: "Elle marche la tête haute, libre et fière,\nSon regard brille comme mille soleils.\nElle danse avec grâce, elle chante avec force,\nLa femme tamoule, lumière du monde.",
   },
   {
-    author: "Jacques Prévert",
-    title: "Les feuilles mortes",
-    text: "Oh ! je voudrais tant que tu te souviennes\nDes jours heureux où nous étions amis.\nEn ce temps-là la vie était plus belle,\nEt le soleil plus brûlant qu'aujourd'hui.",
+    author: "Avvaiyar",
+    title: "Sagesse ancienne",
+    text: "Apprends tant que tu es jeune,\nComme l'eau qui coule toujours vers l'avant.\nLa connaissance est la vraie richesse,\nQue nul voleur ne peut dérober.",
   },
   {
-    author: "Louis Aragon",
-    title: "Il n'y a pas d'amour heureux",
-    text: "Rien n'est jamais acquis à l'homme Ni sa force\nNi sa faiblesse ni son cœur Et quand il croit\nOuvrir ses bras son ombre est celle d'une croix\nEt quand il croit serrer son bonheur il le broie.",
+    author: "Kambar",
+    title: "Kamba Ramayanam — Sita",
+    text: "Telle une flamme qui danse dans le vent,\nSa beauté illumine les trois mondes.\nSes pas sont la musique des dieux,\nEt son sourire, la promesse de l'éternité.",
   },
 ];
 
@@ -58,10 +58,10 @@ const Poems = () => {
         <header className="text-center mb-8">
           <span className="text-6xl block mb-3">📜</span>
           <h1 className="font-display text-3xl md:text-4xl font-black text-foreground mb-2">
-            Poèmes d'<span className="text-primary">Amour</span>
+            Poésie <span className="text-primary">Tamoule</span>
           </h1>
           <p className="font-body text-muted-foreground">
-            Les plus beaux vers des poètes célèbres — et les tiens ! 💕
+            Les plus beaux vers des poètes tamouls — et les tiens ! 🌸
           </p>
         </header>
 
@@ -116,7 +116,7 @@ const Poems = () => {
             />
             <div className="flex gap-3">
               <button onClick={addPoem} className="btn-valentine text-sm py-2 px-6">
-                Ajouter 💖
+                Ajouter 🪔
               </button>
               <button
                 onClick={() => setShowForm(false)}

@@ -11,40 +11,52 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Quel est le symbole universel de l'amour ?",
-    options: ["Une étoile ⭐", "Un cœur ❤️", "Une fleur 🌸", "Un diamant 💎"],
+    question: "Quel est le nom de la danse classique tamoule la plus connue ?",
+    options: ["Kathak", "Bharatanatyam 💃", "Odissi", "Kuchipudi"],
     correct: 1,
-    emoji: "💕",
+    emoji: "💃",
   },
   {
-    question: "Dans quel pays la Saint-Valentin est-elle née ?",
-    options: ["France 🇫🇷", "Italie 🇮🇹", "Rome Antique 🏛️", "Grèce 🇬🇷"],
+    question: "Quel instrument accompagne traditionnellement le Bharatanatyam ?",
+    options: ["Le sitar", "Le tabla", "Le mridangam 🥁", "La flûte bansuri"],
     correct: 2,
-    emoji: "🌍",
+    emoji: "🎵",
   },
   {
-    question: "Quelle fleur est associée à l'amour ?",
-    options: ["Le tournesol 🌻", "La rose rouge 🌹", "La tulipe 🌷", "Le lys 🌺"],
+    question: "Comment s'appelle la clochette portée aux chevilles par les danseuses ?",
+    options: ["Ghungroo / Salangai 🔔", "Taal", "Manjira", "Chimta"],
+    correct: 0,
+    emoji: "🔔",
+  },
+  {
+    question: "Quel est l'auteur du Thirukkural, chef-d'œuvre de la littérature tamoule ?",
+    options: ["Bharathiar", "Kambar", "Thiruvalluvar 📜", "Ilango Adigal"],
+    correct: 2,
+    emoji: "📜",
+  },
+  {
+    question: "Quel festival tamoul célèbre la récolte et le soleil ?",
+    options: ["Diwali", "Pongal 🌾", "Navratri", "Onam"],
     correct: 1,
-    emoji: "🌹",
+    emoji: "🌾",
   },
   {
-    question: "Qui est le dieu de l'amour dans la mythologie romaine ?",
-    options: ["Jupiter", "Mars", "Cupidon 🏹", "Vénus"],
+    question: "Dans le Bharatanatyam, que signifie 'Nritta' ?",
+    options: ["La danse pure / abstraite ✨", "La danse narrative", "Le chant", "Le rythme"],
+    correct: 0,
+    emoji: "✨",
+  },
+  {
+    question: "Quel est le motif décoratif dessiné au sol dans la culture tamoule ?",
+    options: ["Rangoli", "Kolam 🌀", "Mandala", "Mehendi"],
+    correct: 1,
+    emoji: "🌀",
+  },
+  {
+    question: "Quelle fleur est souvent portée dans les cheveux des femmes tamoules ?",
+    options: ["La rose", "Le lotus", "Le jasmin (Malligai) 🌸", "L'orchidée"],
     correct: 2,
-    emoji: "🏹",
-  },
-  {
-    question: "Combien de roses offre-t-on pour dire 'je t'aime' ?",
-    options: ["3 roses", "7 roses", "12 roses", "1 seule rose"],
-    correct: 3,
-    emoji: "💐",
-  },
-  {
-    question: "Quel chocolat est le plus offert à la Saint-Valentin ?",
-    options: ["Chocolat blanc", "Chocolat noir", "Chocolat au lait en cœur 🍫", "Chocolat praliné"],
-    correct: 2,
-    emoji: "🍫",
+    emoji: "🌸",
   },
 ];
 
@@ -73,10 +85,10 @@ const QuizGame = () => {
 
   const getResultMessage = () => {
     const pct = score / questions.length;
-    if (pct === 1) return { text: "Parfait ! Tu es un(e) expert(e) de l'amour ! 💖", emoji: "🏆" };
-    if (pct >= 0.7) return { text: "Bravo ! L'amour n'a presque plus de secrets pour toi !", emoji: "🥰" };
-    if (pct >= 0.4) return { text: "Pas mal ! Continue d'apprendre les mystères de l'amour.", emoji: "😊" };
-    return { text: "L'amour est un apprentissage... Réessaie ! 💪", emoji: "💝" };
+    if (pct === 1) return { text: "Parfait ! Tu es une vraie experte de la culture tamoule ! 🪔", emoji: "🏆" };
+    if (pct >= 0.7) return { text: "Bravo ! Le Bharatanatyam n'a plus de secrets pour toi !", emoji: "💃" };
+    if (pct >= 0.4) return { text: "Pas mal ! Continue de découvrir ta belle culture.", emoji: "🌸" };
+    return { text: "Réessaie, danseuse ! Tu vas y arriver ! 💪", emoji: "🪷" };
   };
 
   const q = questions[current];

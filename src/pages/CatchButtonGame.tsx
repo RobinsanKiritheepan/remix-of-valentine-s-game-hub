@@ -3,14 +3,14 @@ import { useNavigate } from "react-router-dom";
 import FloatingHearts from "@/components/FloatingHearts";
 
 const loveMessages = [
-  "Tu es incroyable ! 💖",
-  "Mon cœur bat pour toi ! 💓",
-  "Tu illumines ma vie ! ✨",
-  "Je t'adore ! 🥰",
-  "Tu es unique ! 💎",
+  "Superbe adavu ! 💃",
+  "Tes mudras sont parfaits ! ✨",
+  "Quelle grâce ! 🌸",
+  "Magnifique natya ! 🪔",
+  "Tu danses comme une apsara ! 🌺",
   "Quelle rapidité ! ⚡",
-  "Bravo champion(ne) ! 🏆",
-  "L'amour te rend rapide ! 💨",
+  "Bravo danseuse ! 🏆",
+  "Natarajah serait fier ! 🔱",
 ];
 
 const CatchButtonGame = () => {
@@ -66,17 +66,16 @@ const CatchButtonGame = () => {
 
   const handleMouseEnter = () => {
     if (!started) return;
-    // 40% chance the button dodges
     if (Math.random() < 0.4) {
       moveButton();
     }
   };
 
   const getResult = () => {
-    if (score >= 12) return { text: "Incroyable ! L'amour te donne des super pouvoirs ! 🦸", emoji: "🏆" };
-    if (score >= 8) return { text: "Très bien ! Ton cœur est rapide ! 💨", emoji: "🥇" };
-    if (score >= 4) return { text: "Pas mal du tout ! Continue ! 💪", emoji: "😄" };
-    return { text: "Le bouton est malin... Réessaie ! 😜", emoji: "💝" };
+    if (score >= 12) return { text: "Incroyable ! Tu as la grâce de Shiva Nataraja ! 🔱", emoji: "🏆" };
+    if (score >= 8) return { text: "Très bien ! Tes mains sont aussi rapides que tes mudras ! 💃", emoji: "🥇" };
+    if (score >= 4) return { text: "Pas mal du tout ! Continue ! 💪", emoji: "🌸" };
+    return { text: "Le kolam est malin... Réessaie ! 😜", emoji: "🪔" };
   };
 
   return (
@@ -94,14 +93,14 @@ const CatchButtonGame = () => {
           <div className="game-card text-center">
             <span className="text-5xl block mb-4">🎯</span>
             <h2 className="font-display text-2xl font-bold text-foreground mb-2">
-              Attrape le Cœur !
+              Attrape le Kolam !
             </h2>
             <p className="font-body text-muted-foreground mb-6">
-              Clique sur le bouton-cœur le plus de fois possible en 15 secondes !
+              Clique sur le motif kolam le plus de fois possible en 15 secondes !
               Attention, il bouge et parfois il s'échappe... 😏
             </p>
             <button onClick={startGame} className="btn-valentine text-lg">
-              Commencer 💘
+              Commencer 🪔
             </button>
           </div>
         )}
@@ -143,10 +142,10 @@ const CatchButtonGame = () => {
                   top: `${btnPos.y}%`,
                   transform: "translate(-50%, -50%)",
                   fontSize: "48px",
-                  filter: "drop-shadow(0 4px 8px hsl(345 80% 55% / 0.3))",
+                  filter: "drop-shadow(0 4px 8px hsl(38 85% 50% / 0.4))",
                 }}
               >
-                💖
+                🪷
               </button>
             </div>
           </>
@@ -159,7 +158,7 @@ const CatchButtonGame = () => {
               Temps écoulé !
             </h2>
             <p className="text-4xl font-display font-black text-primary mb-2">
-              {score} cœurs attrapés
+              {score} kolams attrapés
             </p>
             <p className="font-body text-muted-foreground mb-6">
               {getResult().text}

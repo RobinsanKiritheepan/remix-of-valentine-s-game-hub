@@ -3,46 +3,46 @@ import FloatingHearts from "@/components/FloatingHearts";
 
 const games = [
   {
-    title: "Quiz de l'Amour",
-    description: "Teste tes connaissances sur la Saint-Valentin avec ce QCM romantique !",
-    emoji: "💕",
+    title: "Quiz Tamil & Danse",
+    description: "Teste tes connaissances sur le Bharatanatyam et la culture tamoule !",
+    emoji: "🪔",
     path: "/quiz",
-    color: "from-valentine-rose to-valentine-pink",
+    color: "from-primary to-accent",
   },
   {
-    title: "Attrape le Cœur",
-    description: "Le bouton bouge et s'échappe... Arriveras-tu à l'attraper ?",
+    title: "Attrape le Kolam",
+    description: "Le motif bouge et s'échappe... Arriveras-tu à l'attraper ?",
     emoji: "🎯",
     path: "/catch",
-    color: "from-valentine-gold to-accent",
+    color: "from-accent to-primary",
   },
   {
-    title: "Mots d'Amour",
-    description: "Trouve les lettres manquantes des mots les plus doux !",
-    emoji: "✉️",
+    title: "Mots Tamouls",
+    description: "Trouve les lettres manquantes des mots de la culture tamoule !",
+    emoji: "✍️",
     path: "/love-letter",
-    color: "from-valentine-deep to-valentine-rose",
+    color: "from-primary to-accent",
   },
   {
-    title: "Poèmes d'Amour",
-    description: "Lis et ajoute tes propres poèmes romantiques de grands auteurs !",
+    title: "Poésie Tamoule",
+    description: "Lis les plus beaux vers de Thiruvalluvar, Bharathiar et écris les tiens !",
     emoji: "📜",
     path: "/poems",
-    color: "from-valentine-rose to-valentine-deep",
+    color: "from-primary to-accent",
   },
   {
     title: "Écris ta Chanson",
-    description: "Compose tes plus belles paroles d'amour et garde-les précieusement !",
+    description: "Compose tes plus belles paroles inspirées de la musique tamoule !",
     emoji: "🎶",
     path: "/song-writer",
-    color: "from-valentine-gold to-valentine-rose",
+    color: "from-accent to-primary",
   },
   {
-    title: "Musique Romantique",
-    description: "Écoute et ajoute tes chansons d'amour préférées via YouTube !",
+    title: "Musique Tamoule",
+    description: "Écoute et ajoute tes chansons tamoules préférées !",
     emoji: "🎧",
     path: "/music",
-    color: "from-valentine-pink to-valentine-gold",
+    color: "from-primary to-accent",
   },
 ];
 
@@ -56,13 +56,13 @@ const Index = () => {
       {/* Hero */}
       <header className="relative z-10 text-center pt-16 pb-10 px-4">
         <div className="pulse-love inline-block mb-4">
-          <span className="text-7xl">💝</span>
+          <span className="text-7xl">💃</span>
         </div>
         <h1 className="font-display text-4xl md:text-5xl font-black text-foreground mb-3">
-          Jeux de la <span className="text-primary">Saint-Valentin</span>
+          Pour ma <span className="text-primary">Danseuse</span> Tamoule
         </h1>
         <p className="font-body text-lg text-muted-foreground max-w-md mx-auto">
-          Amuse-toi avec ces mini-jeux spécialement créés pour la fête de l'amour ! 💖
+          Des mini-jeux créés spécialement pour toi, reine du Bharatanatyam ! 🪷✨
         </p>
       </header>
 
@@ -93,7 +93,7 @@ const Index = () => {
 
         <footer className="text-center mt-12">
           <p className="font-body text-sm text-muted-foreground">
-            Fait avec ❤️ pour la Saint-Valentin 2026
+            Fait avec 🪔 pour ma danseuse préférée
           </p>
         </footer>
       </main>
